@@ -1,0 +1,109 @@
+@media(max-width: 500px){
+
+/* nav */
+body, .nowPlayingView.shown,.nowPlayingView .nowPlayingViewContainer .nowPlayingViewBody .nowPlayingViewContents {
+ min-width: 0px !important;
+    min-height: 0px !important;
+}
+
+/*nav */
+#header{
+ width: 100% !important;   
+}
+#header .musicLogo {
+	display: none;
+}
+#dragonflyTransport {
+ height: 150px;   
+}
+#dragonflyTransport .dragonflyTransportContainer  {
+ display: flex;
+ flex-direction: column;
+}
+.dragonfly .searchBox {
+    height: 20px;
+}
+.search .playerIconSearch {
+ display: none;   
+}
+.dragonflyTransportContainer .rightSide  {
+ margin-top: 30px;
+}
+.dragonflyTransportContainer .rightSide .playbackControlsView {
+    flex-wrap: wrap-reverse !important;
+}
+.dragonflyTransportContainer .rightSide .trackInfoContainer  {
+   order: 1;
+}
+
+/* main */
+#left-content {
+    float: left !important;
+    left: -190px !important;
+    transition: left 0.2s ease-in-out;
+    z-index: 2 !important;
+    background: white;
+}
+#left-content:hover {
+    left: 0px !important;
+}
+#main-content-wrapper {
+    left: 0px !important;
+    width: 100% !important;
+}
+.dragSongArea {
+    width: 100%;   
+    position: relative;
+    top: 80px;
+}
+
+#browsePanel, #browsePanel .infiniteGrid {
+ left: 0px; 
+    top: 80px;
+width: 100%;
+}
+
+/* now playing */
+#dragonflyView .dragonfly.container {
+ width: 100%;   
+}
+#nowPlayingAlbumArtContainer {
+ display: flex;
+flex-direction: column;
+    max-height: 100%;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+}
+.nowPlayingView .nowPlayingViewContainer .nowPlayingViewBody .nowPlayingTrackDetail {
+    padding-top: 0px;
+}
+.nowPlayingViewContents  {
+ width: 90% !important;   
+}
+.nowPlayingTrackDetail {
+ display: flex;
+flex-direction: column;
+    max-height: 100%;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+}
+.largeAlbumArtContainer, .largeAlbumArtContainer .art {
+    width: 200px !important;
+    height: 200px !important;
+}
+.nowPlayingLyricsContainer {
+    height: auto;
+    position: relative;
+    top: 60px;
+}
+.trackTitle, .trackArtist{
+    width: 100%; 
+    height: auto !important;
+}
+.trackTitle .title {
+    white-space: normal;
+}
+    
+}

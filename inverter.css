@@ -1,0 +1,12 @@
+
+html {
+    -webkit-filter: invert(100%) hue-rotate(180deg);
+    -moz-filter: invert(100%) hue-rotate(180deg);
+    filter: invert(100%) hue-rotate(180deg);
+    background: #fff;
+}
+.img, img, i {
+    -webkit-filter: invert(100%) hue-rotate(180deg);
+    -moz-filter: invert(100%) hue-rotate(180deg);
+    filter: invert(100%) hue-rotate(180deg);
+}

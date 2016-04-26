@@ -1,0 +1,59 @@
+@media(max-width: 800px){
+	body{
+		display: flex; 
+		flex-direction: column; 
+		width :100%; 
+		justify-content: center; 
+		margin: 0;
+	}
+	
+	/*left*/
+	#sitemenu, #menuonline {display:none;}
+	#sidebar {
+		float: none;
+		order: 3; 
+		margin-top: 20px; 
+		border-radius: 0px; 
+		border: none;
+		width: 100%;
+		padding: 0; 
+	}
+	#menuoneliner {padding: 20px 0; }
+	
+	/* right */
+	#usermenu, #sidebarnews {display: none; }
+	#rightside {
+		float: none; 
+		width: inherit; 
+		padding: 20px 0; 
+		order: 1;
+		border-radius: 0px; 
+		border: none;
+	}
+	#nowplaying h3 {
+		border: none; 
+		text-align: center;
+	}
+	#nowplaying > hr {display: none; }
+
+	/* centre */
+	#main { 
+		margin: 0 auto; 
+		order: 2;
+		border-radius: 0px; 
+		border: none;
+	}
+	table.songlist tbody tr th:nth-child(4),
+	table.songlist tbody tr td:nth-child(4),
+	table.songlist tbody tr th:nth-child(6),
+	table.songlist tbody tr td:nth-child(6), 
+	table.songlist tbody tr th:nth-child(7), 
+	table.songlist tbody tr td:nth-child(7) {display: none;}
+	.songname a[href *='platform'] {display: none;}
+	.artistname img.countryflag {
+		display: block; 
+		margin: 0 auto;
+	}
+	#footer {display: none; }
+	.messagebox {display: none; }
+}

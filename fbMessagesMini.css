@@ -1,0 +1,69 @@
+/*facebook headers */
+._129-,#u_0_e{ display: none; } 
+
+/*msg headers*/
+.touch ._5c9u, .touch ._5ca9, .touch button._5c9u{
+	background: #3B5998 !important;
+	color: white !important;
+	text-shadow: none !important;
+} 
+i._56br.img, i.img._44qm._4q9b {
+	-webkit-filter: brightness(500%);
+	-moz-filter: brightness(500%);
+	filter: brightness(500%);
+}
+.acg.apm {
+	background: #3B5998 !important;
+}
+._55wr._4g33._52we._44qk{
+	background: #3B5998 !important;
+	color: white !important;
+}
+._55wr._4g33._52we._44qk .fbLastActiveTimestamp.mfss.fcg, a._32tz:link, ._52jh a:link {
+	color: #D4D4D4;	
+}
+
+/* spinner */
+.viewportArea._2v9s {
+	background: #3B5998;
+}
+._5v5d.fcg, #dialogSpinner {
+	color: white;	
+	-webkit-filter: brightness(500%);
+	-moz-filter: brightness(500%);
+	filter: brightness(500%);
+}
+
+/* pad messages */
+._55wp._4g33._5b6o._2ycx.acw.del_area.async_del.abb.touchable._592p._25mv, 
+._55wp._4g33._5b6o._2ycx.aclb.del_area.async_del.abb.touchable._592p._25mv,
+.item.unreadMessage.acw.abb,
+._2ykg .item.acw.abb {padding: 10px; } 
+
+@keyframes typer{
+	0% {
+		color: #3B5998;
+		background-color: #ffffff;
+	}
+	50% {
+		color: #ffffff;
+		background-color: #3B5998;
+	}
+	100% {
+		color: #3B5998;
+		background-color: #ffffff;
+	}
+	
+}
+
+#typingIndicator {
+	animation: typer 2s infinite;
+}
+
+/* bottom  stuff */
+.acw.apm.abt {display: none;}
+
+/* global annoyances*/
+body.touch{cursor:auto;}
+*{border-radius: 0 !important;}
+#viewport {min-height: 100%;}

@@ -1,0 +1,19 @@
+.home_leftcol {
+    width: 100% !important;
+}
+
+.main_cluster_content { height: 390px !important; }
+
+#discovery_queue_empty { display: none !important; }
+#discovery_queue_static { display: block !important; }
+
+.home_smallcap_area.recently_updated.home_actions_hover_parent { height: 180px; overflow: hidden; transition: height 0.5s ease-out; }
+
+.home_smallcap_area.recently_updated.home_actions_hover_parent:hover { height: 300px; }
+
+div.home_ctn.home_content_ctn, #footer, .hardware_ctn {display: none; }
+
+.discovery_queue_overlay_position{ top: 0; }
+#discovery_queue_static {height: 70px; }
+
+body > div.responsive_page_frame.with_header > div.responsive_page_content > div.responsive_page_template_content > div.home_page_body_ctn > div:nth-child(8) {display: none;}

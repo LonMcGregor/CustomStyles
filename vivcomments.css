@@ -1,0 +1,7 @@
+.ccomment-comment {
+ border-left: 4px double #ccc;   
+    padding-left: 6px;
+}
+.ccomment-comments-list > .ccomment-comment {
+    margin-top :4px;
+}
