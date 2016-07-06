@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "TweetDeck Scroll Buttons",
+  "version": "1.0.0",
+
+  "description": "Buttons to quickly scroll tweetdeck left/right",
+  
+  "author": "http://github.com/LonMcGregor",
+  "homepage_url": "http://github.com/LonMcGregor",
+  "content_scripts": [
+    {
+      "matches": ["https://tweetdeck.twitter.com/*", "http://tweetdeck.twitter.com/*"],
+      "js": ["tweetdeck.js"]
+    }
+  ]
+}
