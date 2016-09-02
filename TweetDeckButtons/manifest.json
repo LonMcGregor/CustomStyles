@@ -10,7 +10,10 @@
   "content_scripts": [
     {
       "matches": ["https://tweetdeck.twitter.com/*", "http://tweetdeck.twitter.com/*"],
-      "js": ["tweetdeck.js"]
+      "js": ["contentScript.js"]
     }
+  ],
+  "web_accessible_resources": [
+    "tweetdeck.js", "tweetdeck.css"
   ]
 }
