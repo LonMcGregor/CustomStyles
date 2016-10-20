@@ -1,3 +1,6 @@
+var dark;
+var light;
+
 function doScroll(positive){
     var col = document.getElementsByClassName("js-column")[0];
     var colWidth = col.getBoundingClientRect().width;
@@ -6,17 +9,28 @@ function doScroll(positive){
 }
 
 function toggleTheme(){
-    var settings = $("body > div.js-app.application.is-condensed > header > div > nav > div > div.js-dropdown-content > ul > li:nth-child(4) > a");
-    settings.click();
-    var sheet = settings.context.selectedStylesheetSet;
-    
-    //var n = (sheet==="dark") ? 3 : 2;
-    var n = 2;
-    var identifier = "#general_settings > div.control-group > div.cf > div:nth-child(1) > label:nth-child("+n+") > input";
-    var btn = $(identifier);
-    btn.click();
-    
-   // $("#settings-modal > div > div > footer > button > i").click();
+    if(light.disabled==dark.disabled){
+        dark.disabled = true;
+        light.enabled = false;
+        return;
+    }
+    light.disabled=!light.disabled;
+    dark.disabled=!dark.disabled;
+}
+
+function setLinks(){
+    var links = document.getElementsByTagName('link');
+    for(var i = 0; i < links.length; i++){
+        if(!links[i].attributes.title){
+            continue;
+        }
+        if(links[i].attributes.title.value==="dark"){
+            dark = links[i];
+        }
+        else if(links[i].attributes.title.value==="light"){
+            light = links[i];
+        }
+    }
 }
 
 function makeButton(offset, tip, action){
@@ -38,3 +52,5 @@ function makeButton(offset, tip, action){
 document.body.appendChild(makeButton(0, "⏩", function(){doScroll(true);}));
 document.body.appendChild(makeButton(1, "⏪", function(){doScroll(false);}));
 document.body.appendChild(makeButton(2, "✴️", function(){toggleTheme();}));
+
+setLinks();
