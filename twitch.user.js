@@ -8,7 +8,7 @@
 
 function makeStyle(){
     var style = document.createElement('style');
-    style.innerHTML = ".theme--dark .vod-message .qa-mod-message span {color: white !important} .conversations-wrapper {display: none}";
+    style.innerHTML = ".theme--dark .vod-message .qa-mod-message span {color: white !important}";
     document.body.appendChild(style);
 }
 
