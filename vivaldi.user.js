@@ -8,7 +8,14 @@
 
 function makeStyle(){
     var style = document.createElement('style');
-    style.innerHTML = "@media (max-width: 1199px){ .menu-section .menu-section-list { height: 0px; visibility: hidden } .menu-section:hover .menu-section-list {height: auto; visibility: visible}}";
+    style.innerHTML = `@media (max-width: 1199px){ 
+    .menu-section:not([data-section="notifications"]):not([data-section="chats"]) .menu-section-list { 
+        height: 0px; visibility: hidden 
+    }
+    .menu-section:not([data-section="notifications"]):not([data-section="chats"]):hover .menu-section-list {
+        height: auto; visibility: visible
+    }
+}`;
     document.body.appendChild(style);
 }
 
