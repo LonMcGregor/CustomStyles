@@ -8,7 +8,7 @@
 
 function makeStyle(){
     var style = document.createElement('style');
-    style.innerHTML = ".adDisplay{display:none!important}";
+    style.innerHTML = ".adDisplay{display:none!important} span.captions-text span {font-family:DejaVu Sans Mono, monospace !important}";
     document.body.appendChild(style);
 }
 
