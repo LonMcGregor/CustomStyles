@@ -3,6 +3,7 @@
 // @namespace   uk.lonm.office365.outlook
 // @include     https://outlook.office.com/owa/*
 // @include     https://outlook.office365.com/owa/*
+// @include     https://outlook.live.com/owa/*
 // @version     1
 // ==/UserScript==
 
@@ -10,10 +11,7 @@
 function makeStyle(){
     var style = document.createElement('style');
     style.innerHTML = "@media (max-width: 500px) {\
-#primaryContainer > div:nth-child(7) > div > div._n_T > div > div:nth-child(1) {width: 20vw !important}\
-#primaryContainer > div:nth-child(7) > div > div._n_T > div > div._n_X {width: 80vw !important;left: 20vw !important}\
-#primaryContainer > div:nth-child(7) > div > div._n_T > div > div:nth-child(1) > div:nth-child(2) > div > div:nth-child(5) > div._n_Z4 > div > div > div._n_d4.customScrollBar.scrollContainer > div > div > div:nth-child(1) > div:nth-child(1) > div > div > div > div {position: relative !important;left: -40px !important}\
-body, body > div._n_p3 {width: 100vw !important;min-width: unset !important}\
+        body > div._n_n3 > div > div._ms_2.ms-bgc-w > div > div:nth-child(4) > div > div._n_P > div._n_A > div._n_R > div > div._lv_t > div._lv_u.scrollContainer > div:nth-child(2) {display: none;}\
 }";
     document.body.appendChild(style);
 }
