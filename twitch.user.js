@@ -33,10 +33,10 @@ function makeStyle(){
     const style_element = document.createElement('style');
     style_element.innerHTML = `
     body.dark {
-        filter: invert() hue-rotate(180deg);
+        filter: invert(1) hue-rotate(180deg);
     }
-    body.dark img {
-        filter: invert() hue-rotate(180deg);
+    body.dark img, body.dark video {
+        filter: invert(1) hue-rotate(180deg);
     }
         `;
     document.body.appendChild(style_element);
