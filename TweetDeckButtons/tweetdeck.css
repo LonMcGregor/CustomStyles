@@ -14,7 +14,7 @@ html {
 
 /* columns */
 .js-app-columns, .is-wide-columns .app-columns, html.dark .is-wide-columns .app-columns { padding: 0px; }
-.js-column, .is-wide-columns .column, html.dark .js-column, .is-wide-columns .column { margin: 0px; }
+.js-column, .is-wide-columns .column, html.dark .is-wide-columns .column { margin: 0px; }
 .gap-chirp{display:none;}
 
 /* column headers */
