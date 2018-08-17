@@ -16,12 +16,9 @@
     const config = {childList: true};
 
     function alertChanged(mutations){
-        console.log(mutations);
         mutations.forEach(mutation => {
             if(mutation.type === 'childList' && mutation.addedNodes.length > 0){
                 const notify_text = mutation.addedNodes[0].innerText;
-                console.log(mutation);
-                console.log(notify_text);
                 const note = new Notification("Vivaldi Forum", {
                     body: notify_text,
                     icon: "https://forum.vivaldi.net/plugins/nodebb-theme-vivaldi/images/favicon.png"
