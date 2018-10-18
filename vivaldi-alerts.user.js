@@ -2,7 +2,7 @@
 // @name        Vivaldi Notify Alerts
 // @namespace   lonm.vivaldi.net
 // @include     https://forum.vivaldi.net/*
-// @version     1
+// @version     1.0.1
 // ==/UserScript==
 
 (function(){
@@ -23,7 +23,6 @@
                     body: notify_text,
                     icon: "https://forum.vivaldi.net/plugins/nodebb-theme-vivaldi/images/favicon.png"
                 });
-                setTimeout(function(){note.close();}, 5000);
                 // if multiple windows open, only show one notification!?
             }
         });
